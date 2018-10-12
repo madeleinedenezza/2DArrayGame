@@ -29,4 +29,3 @@ public class Layout
 		System.out.println("         --------------------------------------------");
 		}
 	}
-	//hello!! I am typing this at home!!
