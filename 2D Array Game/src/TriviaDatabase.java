@@ -27,7 +27,15 @@ public class TriviaDatabase
 		questions.add(new Trivia("Difficult", 2, 1, 4, "Who holds the record for the most homeruns in a single major league baseball season?", "Barry Bonds"));
 		questions.add(new Trivia("Difficult", 2, 2, 1, "The expression 'oy vey' comes from what language?", "Yiddish"));
 		questions.add(new Trivia("Difficult", 2, 2, 2, "What is the scientific name for the trunk of an elephant?", "Proboscis"));
-		questions.add(new Trivia("Difficult", 2, 2, 3, ""));
-		
+		questions.add(new Trivia("Difficult", 2, 2, 3, "What was the first year that the Rockefeller Center Christmas Tree was put up?", "1933"));
+		questions.add(new Trivia("Difficult", 2, 2, 4, "What is the name of Mulan's horse?", "Khan"));
+		questions.add(new Trivia("Difficult", 2, 3, 1, "What is the largest in the solar system?", "Jupiter"));
+		questions.add(new Trivia("Difficult", 2, 3, 2, "Which of Shakespeare's plays is the longest?", "Hamlet"));
+		questions.add(new Trivia("Difficult", 2, 3, 3, "Who said 'We are more popular than Jesus?'", "John Lenon"));
+		questions.add(new Trivia("Difficult", 2, 3, 4, "Oil wrestling is the national sport of which country?", "Turkey"));
+		questions.add(new Trivia("Difficult", 2, 4, 1, "What is the complementary color of red?", "Green"));
+		questions.add(new Trivia("Difficult", 2, 4, 2, "What is the fear of bees known as?", "Melissophobia"));
+		questions.add(new Trivia("Difficult", 2, 4, 3, "In which city is the TV show 'Full House' set?", "San Francisco"));
+		questions.add(new Trivia("Difficult", 2, 4, 4, "What is the study of soil called?", "Pedology"));
 		}
-		}
+	}
