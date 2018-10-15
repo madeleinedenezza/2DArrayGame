@@ -2,13 +2,15 @@
 public class Trivia
 	{
 	String difficulty;
+	int difficultyNumber;
 	int level;
 	int room;
 	String question;
 	String answer;
-	public Trivia (String d, int l, int r, String q, String a)
+	public Trivia (String d, int di, int l, int r, String q, String a)
 		{
 		difficulty = d;
+		difficultyNumber = di;
 		level = l;
 		room = r;
 		question = q;
@@ -21,6 +23,14 @@ public class Trivia
 	public void setDifficulty(String difficulty)
 		{
 		this.difficulty = difficulty;
+		}
+	public int getDifficultyNumber()
+		{
+		return difficultyNumber;
+		}
+	public void setDifficultyNumber(int difficultyNumber)
+		{
+		this.difficultyNumber = difficultyNumber;
 		}
 	public int getLevel()
 		{
@@ -54,4 +64,5 @@ public class Trivia
 		{
 		this.answer = answer;
 		}
+
 	}

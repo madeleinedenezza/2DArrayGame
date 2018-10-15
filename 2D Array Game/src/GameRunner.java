@@ -32,7 +32,7 @@ public class GameRunner
 				+ "\nIf you do not answer correctly, you will not move on to the next room, and "
 				+ "\nyou will not be able to move to the next level."
 				+ "\n\nNow that you know how the game works, you can get started!"
-				+ "\nThe Trivia Maze can be played on two different diffculty levels");
+				+ "\nThe Trivia Maze can be played on two different diffculty levels: Easy and Difficult");
 		}
 
 	}
