@@ -21,21 +21,21 @@ public class TriviaDatabase
 		questions.add(new Trivia("Easy", 1, 4, 2, "What is the capital city of Utah? \na St. George \nb Ogden \nc Salt Lake City \nd Park City", "c"));
 		questions.add(new Trivia("Easy", 1, 4, 3, "What is the most populous city in the world? \na Tokyo \nb New York City \nc Amsterdam \nd Delhi", "a"));
 		questions.add(new Trivia("Easy", 1, 4, 4, "What type of fish is Nemo from Finding Nemo \na Starfish \nb Squirrelfish \nc Striped Bass \nd Clownfish", "d"));
-		questions.add(new Trivia("Difficult", 2, 1, 1, "What was the first nation to give women the right to vote?", "New Zealand"));
-		questions.add(new Trivia("Difficult", 2, 1, 2, "What country has not fought in a war since 1814?", "Sweden"));
-		questions.add(new Trivia("Difficult", 2, 1, 3, "Which gas is formed when a hydrogen bomb is detonated?", "Helium"));
-		questions.add(new Trivia("Difficult", 2, 1, 4, "Who holds the record for the most homeruns in a single major league baseball season?", "Barry Bonds"));
-		questions.add(new Trivia("Difficult", 2, 2, 1, "The expression 'oy vey' comes from what language?", "Yiddish"));
-		questions.add(new Trivia("Difficult", 2, 2, 2, "What is the scientific name for the trunk of an elephant?", "Proboscis"));
-		questions.add(new Trivia("Difficult", 2, 2, 3, "What was the first year that the Rockefeller Center Christmas Tree was put up?", "1933"));
-		questions.add(new Trivia("Difficult", 2, 2, 4, "What is the name of Mulan's horse?", "Khan"));
-		questions.add(new Trivia("Difficult", 2, 3, 1, "What is the largest in the solar system?", "Jupiter"));
-		questions.add(new Trivia("Difficult", 2, 3, 2, "Which of Shakespeare's plays is the longest?", "Hamlet"));
-		questions.add(new Trivia("Difficult", 2, 3, 3, "Who said 'We are more popular than Jesus?'", "John Lenon"));
-		questions.add(new Trivia("Difficult", 2, 3, 4, "Oil wrestling is the national sport of which country?", "Turkey"));
-		questions.add(new Trivia("Difficult", 2, 4, 1, "What is the complementary color of red?", "Green"));
-		questions.add(new Trivia("Difficult", 2, 4, 2, "What is the fear of bees known as?", "Melissophobia"));
-		questions.add(new Trivia("Difficult", 2, 4, 3, "In which city is the TV show 'Full House' set?", "San Francisco"));
-		questions.add(new Trivia("Difficult", 2, 4, 4, "What is the study of soil called?", "Pedology"));
+		questions.add(new Trivia("Hard", 2, 1, 1, "What was the first nation to give women the right to vote?", "New Zealand"));
+		questions.add(new Trivia("Hard", 2, 1, 2, "What country has not fought in a war since 1814?", "Sweden"));
+		questions.add(new Trivia("Hard", 2, 1, 3, "Which gas is formed when a hydrogen bomb is detonated?", "Helium"));
+		questions.add(new Trivia("Hard", 2, 1, 4, "Who holds the record for the most homeruns in a single major league baseball season?", "Barry Bonds"));
+		questions.add(new Trivia("Hard", 2, 2, 1, "The expression 'oy vey' comes from what language?", "Yiddish"));
+		questions.add(new Trivia("Hard", 2, 2, 2, "What is the scientific name for the trunk of an elephant?", "Proboscis"));
+		questions.add(new Trivia("Hard", 2, 2, 3, "What was the first year that the Rockefeller Center Christmas Tree was put up?", "1933"));
+		questions.add(new Trivia("Hard", 2, 2, 4, "What is the name of Mulan's horse?", "Khan"));
+		questions.add(new Trivia("Hard", 2, 3, 1, "What is the largest in the solar system?", "Jupiter"));
+		questions.add(new Trivia("Hard", 2, 3, 2, "Which of Shakespeare's plays is the longest?", "Hamlet"));
+		questions.add(new Trivia("Hard", 2, 3, 3, "Who said 'We are more popular than Jesus?'", "John Lenon"));
+		questions.add(new Trivia("Hard", 2, 3, 4, "Oil wrestling is the national sport of which country?", "Turkey"));
+		questions.add(new Trivia("Hard", 2, 4, 1, "What is the complementary color of red?", "Green"));
+		questions.add(new Trivia("Hard", 2, 4, 2, "What is the fear of bees known as?", "Melissophobia"));
+		questions.add(new Trivia("Hard", 2, 4, 3, "In which city is the TV show 'Full House' set?", "San Francisco"));
+		questions.add(new Trivia("Hard", 2, 4, 4, "What is the study of soil called?", "Pedology"));
 		}
 	}

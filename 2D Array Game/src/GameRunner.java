@@ -4,15 +4,19 @@ public class GameRunner
 	{
 	
 	static Scanner userInput;
+	static int levelChoice;
 
 	public static void main(String[] args)
 		{
 		TriviaDatabase.fillArray();
 		Layout.createLayout();
-		Layout.display();
 		introduction();
 		howToPlay();
+		Layout.display();
+		Layout.layout[1][2]="X";
+		Layout.display();
 		chooseLevel();
+		playTheGame();
 		}
 
 	private static void introduction()
@@ -33,23 +37,37 @@ public class GameRunner
 				+ "\nEach room contains a trivia question that you must solve in order to move on."
 				+ "\nIf you do not answer correctly, you will not move on to the next room, and "
 				+ "\nyou will not be able to move to the next level."
-				+ "\n\nNow that you know how the game works, you can get started!");
+				+ "\n");
 		}
 	
 	private static void chooseLevel()
 		{
-		System.out.println(	"\n\nThe Trivia Maze can be played on two different diffculty levels:"
+		System.out.println(	"\n\nThis chart will tell you what level you are on, the room you are in, and the rooms/levels you have completed."
+				+ "\n\nThe Trivia Maze can be played on two different diffculty levels:"
 				+ "\n 1 Easy"
-				+ "\n 2 Difficult"
+				+ "\n 2 Hard"
 				+ "\nPlease choose the number that corresponds with the level you would like to play on...");
 		int levelChoice= userInput.nextInt();
-		for (Trivia t: TriviaDatabase.questions)
+		if (levelChoice==1) 
 			{
-			if (t.getDifficultyNumber()==levelChoice)
-				{
-				System.out.println(t.getDifficulty() + " is your level choice. Good luck! "
-						+ "\n\nPress enter to get started!");
-				}
+			System.out.println("You chose the easy difficulty!"
+					+ "\nSince you chose easy, you will be given trivia questions with multiple choice answers."
+					+ "\nWhen you type in your answer, just simply type the letter that corresponds with the answer you are choosing."
+					+ "\nPress enter to start the Trivia Maze!");
 			}
+		else if (levelChoice==2)
+			{
+			System.out.println("You chose the hard difficulty! Way to challenge yourself!"
+					+ "\nSince you chose hard, you will NOT get multiple choice options, so you gotta know your stuff!"
+					+ "\nWhen you type your answer, make sure you are using correct spelling AND you capitalize the first letter of each word you type!"
+					+ "\n\nGood luck!! Press enter to start the Trivia Maze!");
+			}
+		String pressEnter= userInput.nextLine();
 		}
+	
+	private static void playTheGame()
+		{
+		
+		}
+
 	}
