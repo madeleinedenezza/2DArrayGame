@@ -56,6 +56,7 @@ public class GameRunner
 					+ "\nWhen you type in your answer, just simply type the letter that corresponds with the answer you are choosing."
 					+ "\nTime to get started!!"
 					+ "\n\n");
+			counter = 0;
 			}
 		else if (difficultyChoice==2)
 			{
@@ -64,39 +65,41 @@ public class GameRunner
 					+ "\nWhen you type your answer, make sure you are using correct spelling AND you capitalize the first letter of each word you type!"
 					+ "\n\nGood luck!! Time to get started!"
 					+ "\n\n");
+			counter = 16;
 			}
 		}
 	
 	private static void playTheGame()
 		{
 		userInput= new Scanner(System.in);
-			if (difficultyChoice==TriviaDatabase.questions.get(counter).getDifficultyNumber())
+			System.out.println(TriviaDatabase.questions.get(counter).getQuestion());
+			String answer= userInput.nextLine();
+			if (answer.equals(TriviaDatabase.questions.get(counter).getAnswer()))
 				{
-				System.out.println(counter);
-				System.out.println(TriviaDatabase.questions.get(counter).getQuestion());
-				String answer= userInput.nextLine();
-				if (answer.equals(TriviaDatabase.questions.get(counter).getAnswer()))
+				System.out.println("Correct!");
+				Layout.layout[i][j]= "X";
+				Layout.display();
+				if (Layout.layout[3][3].equals("X"))
 					{
-					System.out.println("Correct!");
-					Layout.layout[i][j]= "X";
-					Layout.display();
-					System.out.println("\n"
-							+ "Press enter for the next question...");
-					String pressEnter= userInput.nextLine();
-					counter++;
-					j++;
-					if (j==4)
-						{
-						i++;
-						j=0;
-						}
-					playTheGame();
+					System.out.println("You won!!! Congratulations!!!");
+					System.exit(0);
 					}
-				else
+				System.out.println("\n"
+						+ "Press enter for the next question...");
+				String pressEnter= userInput.nextLine();
+				counter++;
+				j++;
+				if (j==4)
 					{
-					System.out.println("Wrong. Try again.");
-					playTheGame();
+					i++;
+					j=0;
 					}
+				playTheGame();
 				}
-			}
+			else
+				{
+				System.out.println("Wrong. Try again.");
+				playTheGame();
+				}
 		}
+	}

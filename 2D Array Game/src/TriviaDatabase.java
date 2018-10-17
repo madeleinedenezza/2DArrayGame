@@ -29,7 +29,7 @@ public class TriviaDatabase
 		questions.add(new Trivia("Hard", 2, 2, 2, "What is the scientific name for the trunk of an elephant?", "Proboscis"));
 		questions.add(new Trivia("Hard", 2, 2, 3, "What was the first year that the Rockefeller Center Christmas Tree was put up?", "1933"));
 		questions.add(new Trivia("Hard", 2, 2, 4, "What is the name of Mulan's horse?", "Khan"));
-		questions.add(new Trivia("Hard", 2, 3, 1, "What is the largest in the solar system?", "Jupiter"));
+		questions.add(new Trivia("Hard", 2, 3, 1, "What is the largest planet in the solar system?", "Jupiter"));
 		questions.add(new Trivia("Hard", 2, 3, 2, "Which of Shakespeare's plays is the longest?", "Hamlet"));
 		questions.add(new Trivia("Hard", 2, 3, 3, "Who said 'We are more popular than Jesus?'", "John Lenon"));
 		questions.add(new Trivia("Hard", 2, 3, 4, "Oil wrestling is the national sport of which country?", "Turkey"));

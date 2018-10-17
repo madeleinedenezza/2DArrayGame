@@ -32,6 +32,7 @@ public class Layout
 		System.out.println("    -------------------------");
 		System.out.println("    | X = rooms you have    |");
 		System.out.println("    |     completed         |");
-		System.out.println("    -------------------------");
+		System.out.println("    -------------------------"
+				+ "\n\n\n");
 		}
 	}
