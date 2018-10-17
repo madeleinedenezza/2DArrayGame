@@ -30,9 +30,7 @@ public class Layout
 		System.out.println("\n");
 		System.out.println("\n");
 		System.out.println("    -------------------------");
-		System.out.println("    | X = where you are     |");
-		System.out.println("    |                       |");
-		System.out.println("    | O = rooms you have    |");
+		System.out.println("    | X = rooms you have    |");
 		System.out.println("    |     completed         |");
 		System.out.println("    -------------------------");
 		}

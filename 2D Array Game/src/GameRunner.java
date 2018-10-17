@@ -5,6 +5,9 @@ public class GameRunner
 	
 	static Scanner userInput;
 	static int difficultyChoice;
+	static int counter = 0;
+	static int i = 0;
+	static int j = 0;
 
 	public static void main(String[] args)
 		{
@@ -45,7 +48,7 @@ public class GameRunner
 				+ "\n 1 Easy"
 				+ "\n 2 Hard"
 				+ "\nPlease choose the number that corresponds with the level you would like to play on...");
-		int difficultyChoice= userInput.nextInt();
+		difficultyChoice= userInput.nextInt();
 		if (difficultyChoice==1) 
 			{
 			System.out.println("\nYou chose the easy difficulty!"
@@ -66,16 +69,34 @@ public class GameRunner
 	
 	private static void playTheGame()
 		{
-		int counter = 0;
-			if (difficultyChoice==questions.getCounter().getDifficultyNumber())
+		userInput= new Scanner(System.in);
+			if (difficultyChoice==TriviaDatabase.questions.get(counter).getDifficultyNumber())
 				{
-				
+				System.out.println(counter);
+				System.out.println(TriviaDatabase.questions.get(counter).getQuestion());
+				String answer= userInput.nextLine();
+				if (answer.equals(TriviaDatabase.questions.get(counter).getAnswer()))
+					{
+					System.out.println("Correct!");
+					Layout.layout[i][j]= "X";
+					Layout.display();
+					System.out.println("\n"
+							+ "Press enter for the next question...");
+					String pressEnter= userInput.nextLine();
+					counter++;
+					j++;
+					if (j==4)
+						{
+						i++;
+						j=0;
+						}
+					playTheGame();
+					}
+				else
+					{
+					System.out.println("Wrong. Try again.");
+					playTheGame();
+					}
 				}
 			}
 		}
-
-
-
-
-
-
