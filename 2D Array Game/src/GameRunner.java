@@ -4,7 +4,7 @@ public class GameRunner
 	{
 	
 	static Scanner userInput;
-	static int levelChoice;
+	static int difficultyChoice;
 
 	public static void main(String[] args)
 		{
@@ -12,8 +12,6 @@ public class GameRunner
 		Layout.createLayout();
 		introduction();
 		howToPlay();
-		Layout.display();
-		Layout.layout[1][2]="X";
 		Layout.display();
 		chooseLevel();
 		playTheGame();
@@ -47,27 +45,37 @@ public class GameRunner
 				+ "\n 1 Easy"
 				+ "\n 2 Hard"
 				+ "\nPlease choose the number that corresponds with the level you would like to play on...");
-		int levelChoice= userInput.nextInt();
-		if (levelChoice==1) 
+		int difficultyChoice= userInput.nextInt();
+		if (difficultyChoice==1) 
 			{
-			System.out.println("You chose the easy difficulty!"
+			System.out.println("\nYou chose the easy difficulty!"
 					+ "\nSince you chose easy, you will be given trivia questions with multiple choice answers."
 					+ "\nWhen you type in your answer, just simply type the letter that corresponds with the answer you are choosing."
-					+ "\nPress enter to start the Trivia Maze!");
+					+ "\nTime to get started!!"
+					+ "\n\n");
 			}
-		else if (levelChoice==2)
+		else if (difficultyChoice==2)
 			{
 			System.out.println("You chose the hard difficulty! Way to challenge yourself!"
 					+ "\nSince you chose hard, you will NOT get multiple choice options, so you gotta know your stuff!"
 					+ "\nWhen you type your answer, make sure you are using correct spelling AND you capitalize the first letter of each word you type!"
-					+ "\n\nGood luck!! Press enter to start the Trivia Maze!");
+					+ "\n\nGood luck!! Time to get started!"
+					+ "\n\n");
 			}
-		String pressEnter= userInput.nextLine();
 		}
 	
 	private static void playTheGame()
 		{
-		
+		int counter = 0;
+			if (difficultyChoice==questions.getCounter().getDifficultyNumber())
+				{
+				
+				}
+			}
 		}
 
-	}
+
+
+
+
+
