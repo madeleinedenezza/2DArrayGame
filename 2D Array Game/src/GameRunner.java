@@ -43,7 +43,7 @@ public class GameRunner
 	
 	private static void chooseLevel()
 		{
-		System.out.println(	"\n\nThis chart will tell you what level you are on, the room you are in, and the rooms/levels you have completed."
+		System.out.println(	"\n\nThis chart will tell you what level you are on, and the rooms/levels you have completed."
 				+ "\n\nThe Trivia Maze can be played on two different diffculty levels:"
 				+ "\n 1 Easy"
 				+ "\n 2 Hard"
