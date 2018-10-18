@@ -31,7 +31,7 @@ public class TriviaDatabase
 		questions.add(new Trivia("Hard", 2, 2, 4, "What is the name of Mulan's horse?", "Khan"));
 		questions.add(new Trivia("Hard", 2, 3, 1, "What is the largest planet in the solar system?", "Jupiter"));
 		questions.add(new Trivia("Hard", 2, 3, 2, "Which of Shakespeare's plays is the longest?", "Hamlet"));
-		questions.add(new Trivia("Hard", 2, 3, 3, "Who said 'We are more popular than Jesus?'", "John Lenon"));
+		questions.add(new Trivia("Hard", 2, 3, 3, "Who said 'We are more popular than Jesus?'", "John Lennon"));
 		questions.add(new Trivia("Hard", 2, 3, 4, "Oil wrestling is the national sport of which country?", "Turkey"));
 		questions.add(new Trivia("Hard", 2, 4, 1, "What is the complementary color of red?", "Green"));
 		questions.add(new Trivia("Hard", 2, 4, 2, "What is the fear of bees known as?", "Melissophobia"));
