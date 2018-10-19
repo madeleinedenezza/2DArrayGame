@@ -17,7 +17,7 @@ public class TriviaDatabase
 		questions.add(new Trivia("Easy", 1, 3, 2, "What NFL team has the most Superbowl wins? \na The Pittsburgh Steelers \nb The New England Patriots \nc The Detroit Lions \nd The Denver Broncos", "a"));
 		questions.add(new Trivia("Easy", 1, 3, 3, "What country is home to the Great Barrier Reef? \na Brazil \nb Italy \nc Australia \nd South Africa", "c"));
 		questions.add(new Trivia("Easy", 1, 3, 4, "What movie features a cowboy named Woody? \na Star Wars \nb Fast and Furious \nc Wall-E \nd Toy Story", "d"));
-		questions.add(new Trivia("Easy", 1, 4, 1, "Who invented the light bulb? \na Thomas Jefferson \nb Andrew Carnegie \nc Thomas Eddison \nd Cornelius Vanderbilt", "c"));
+		questions.add(new Trivia("Easy", 1, 4, 1, "Who invented the light bulb? \na Thomas Jefferson \nb Andrew Carnegie \nc Thomas Edison \nd Cornelius Vanderbilt", "c"));
 		questions.add(new Trivia("Easy", 1, 4, 2, "What is the capital city of Utah? \na St. George \nb Ogden \nc Salt Lake City \nd Park City", "c"));
 		questions.add(new Trivia("Easy", 1, 4, 3, "What is the most populous city in the world? \na Tokyo \nb New York City \nc Amsterdam \nd Delhi", "a"));
 		questions.add(new Trivia("Easy", 1, 4, 4, "What type of fish is Nemo from Finding Nemo \na Starfish \nb Squirrelfish \nc Striped Bass \nd Clownfish", "d"));
